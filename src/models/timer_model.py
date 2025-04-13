@@ -33,6 +33,7 @@ class TimerModel:
                     # 加载设置
                     settings = data.get('settings', {})
                     self.work_duration = settings.get('work_duration', 25)
+                    self.remaining_seconds = self.work_duration * 60 
                     self.short_break_duration = settings.get('short_break_duration', 5)
                     self.long_break_duration = settings.get('long_break_duration', 15)
                     self.long_break_interval = settings.get('long_break_interval', 4)
