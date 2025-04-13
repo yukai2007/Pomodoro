@@ -1,6 +1,6 @@
 from PyQt5.QtCore import QTimer
-from ..models.timer_model import TimerModel
-from ..views.main_window import MainWindow
+from models.timer_model import TimerModel
+from views.main_window import MainWindow
 
 class TimerController:
     def __init__(self):
